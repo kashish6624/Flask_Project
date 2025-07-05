@@ -173,7 +173,6 @@ PyMsgBox==1.0.9
 pyOpenSSL==25.1.0
 pyparsing==3.1.2
 pyperclip==1.9.0
-pypiwin32==223
 pyproject_hooks==1.2.0
 PyRect==0.2.0
 PyScreeze==1.0.1
@@ -184,7 +183,6 @@ python-json-logger==2.0.7
 pyttsx3==2.90
 pytweening==1.2.0
 pytz==2024.1
-pywin32==306
 pywinpty==2.0.13
 PyYAML==6.0.2
 pyzmq==26.1.0
