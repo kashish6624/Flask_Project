@@ -258,4 +258,3 @@ wrapt==1.16.0
 wsproto==1.2.0
 xgboost==3.0.2
 zope.interface==7.2
---upgrade pip
