@@ -25,7 +25,6 @@ charset-normalizer==3.3.2
 click==8.1.7
 colorama==0.4.6
 comm==0.2.2
-comtypes==1.4.6
 constantly==23.10.4
 contourpy==1.2.1
 cryptography==45.0.5
@@ -33,7 +32,6 @@ cssselect==1.3.0
 cycler==0.12.1
 debugpy==1.8.5
 decorator==5.1.1
-deeplake==3.9.23
 defusedxml==0.7.1
 dill==0.3.8
 executing==2.0.1
@@ -125,7 +123,7 @@ networkx==3.3
 notebook==7.2.1
 notebook_shim==0.2.4
 numba==0.60.0
-numpy==1.23.5
+numpy>=1.23,<1.26
 oauthlib==3.2.2
 opencv-contrib-python==4.10.0.84
 opencv-python==4.10.0.84
@@ -141,7 +139,6 @@ parso==0.8.4
 pathos==0.3.2
 pillow==10.2.0
 platformdirs==4.2.2
-playwright==1.53.0
 pooch==1.8.2
 pox==0.3.4
 ppft==1.7.6.8
