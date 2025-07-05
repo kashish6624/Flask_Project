@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Crop Features Explained</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.5;
+            color: #555;
+            text-align: justify;
+        }
+        .feature-section {
+            margin-bottom: 30px;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="alert alert-success alert-dismissible fade show text-center mb-0" role="alert">
+        <strong>Checkout features guide!</strong> 
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-warning" href="/">Crop Prediction</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.endpoint == 'index' %}active{% endif %}" aria-current="page" href="{{ url_for('index') }}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.endpoint == 'analysis' %}active{% endif %}" href="{{ url_for('analysis') }}">Details</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <h1 class="text-center text-success my-4">Understanding Crop Features</h1>
+
+    <div class="feature-section">
+        <h2>Nitrogen (N)</h2>
+        <p>Nitrogen is essential for plant growth as it is a major component of chlorophyll and amino acids. Adequate nitrogen improves leaf growth, while its deficiency can result in yellowing leaves and stunted growth. Excess nitrogen, however, may cause excessive vegetative growth and delayed crop maturity.</p>
+    </div>
+
+    <div class="feature-section">
+        <h2>Phosphorous (P)</h2>
+        <p>Phosphorous promotes root development and helps in flower and fruit production. It plays a crucial role in energy transfer and photosynthesis. Insufficient phosphorous may lead to dark green or purplish foliage and poor plant growth.</p>
+    </div>
+
+    <div class="feature-section">
+        <h2>Potassium (K)</h2>
+        <p>Potassium regulates various physiological processes, including water uptake, enzyme activation, and photosynthesis. It enhances drought resistance and improves overall crop quality. Deficiency can cause leaf scorch and poor resistance to pests and diseases.</p>
+    </div>
+
+    <div class="feature-section">
+        <h2>Soil pH</h2>
+        <p>Soil pH determines nutrient availability in the soil. Most crops prefer slightly acidic to neutral pH (6.0 to 7.5). Imbalanced pH can cause nutrient deficiencies or toxicities, affecting crop health and yield.</p>
+    </div>
+
+    <h5 class="text-center text-success">For detailed analysis of the features, check out the Analysis Webpage</h5>
+
+    <div class="text-center mb-5">
+        <a href="{{ url_for('analysis') }}" class="btn btn-secondary">Go to Analysis</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
